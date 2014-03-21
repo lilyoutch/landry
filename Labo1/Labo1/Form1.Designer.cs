@@ -35,6 +35,7 @@ namespace Labo1
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonOpen = new System.Windows.Forms.Button();
             this.panelDessin = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // buttonClose
@@ -71,11 +72,22 @@ namespace Labo1
             this.panelDessin.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDessin_Paint);
             this.panelDessin.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelDessin_MouseMove);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(407, 40);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 568);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.panelDessin);
             this.Controls.Add(this.buttonOpen);
             this.Controls.Add(this.buttonClose);
@@ -83,6 +95,7 @@ namespace Labo1
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -91,6 +104,7 @@ namespace Labo1
         private System.Windows.Forms.Button buttonClose;
         private Button buttonOpen;
         private Panel panelDessin;
+        private CheckBox checkBox1;
     }
 }
 
